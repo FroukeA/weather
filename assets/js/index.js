@@ -1,7 +1,7 @@
 // Data
 let favorites = {
   spring: {
-    name: "Spring",
+    name: "China",
     data: {},
   },
   almaty: {
