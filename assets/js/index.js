@@ -109,7 +109,6 @@ const handleDisplayContent = (array) => {
   });
 };
 
-
 const handleAddClass = (element, value) => {
   element.classList.add(value);
 };
@@ -150,15 +149,12 @@ const handleDisplayCurrentWeatherLocation = () => {
   ];
 
   const div = document.querySelector("#weather__description");
+
   div.className.split(" ").forEach((element) => {
     if (element.includes("today__text--description-")) {
       div.classList.remove(element);
     }
   });
-  // div.className = div.className.replace(
-  //   new RegExp("(?:^|s)" + "today__text--description-" + "(?!S)"),
-  //   ""
-  // );
 
   handleAddClass(
     div,
@@ -272,10 +268,6 @@ const handleChangeDate = () => {
       class: ".today__text--dayName",
       content: days[currentDay],
     },
-    {
-      class: ".today__text--hour",
-      content: `${currentDate.getHours()}: ${minutes}`,
-    },
   ];
 
   handleDisplayContent(elements);
@@ -347,7 +339,6 @@ const handleCheckFahrenheit = (event) => {
 
   currentCity.data.hourly.map((item, i) => {
     item.temp = handleCelsiusToFahrenheit(item.temp).toFixed(1);
-
   });
 
   handleDisplayCurrentWeatherLocation();
