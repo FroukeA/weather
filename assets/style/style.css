@@ -172,7 +172,14 @@ body {
 .today__icon,
 .today__text--rain,
 .today__text--wind,
-.today__text--humidity {
+.today__text--humidity,
+.today__text--description-clear,
+.today__text--description-clouds,
+.today__text--description-mist,
+.today__text--description-rain,
+.today__text--description-thunderstorm,
+.today__text--description-thunder,
+.today__text--description-snow {
   display: flex;
   align-items: center;
 }
@@ -252,7 +259,34 @@ input:focus {
   color: var(--primary-color4);
 }
 
-.today__text--rain::before {
+.today__text--description-clear::before {
+  content: "";
+  background: url("https://static.thenounproject.com/png/39152-200.png") 0 0 no-repeat;
+}
+
+.today__text--description-clouds::before {
+  content: "";
+  background: url("data:image/png;base64,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") 0 0 no-repeat;
+}
+
+.today__text--description-mist::before {
+  content: "";
+  background: url("https://cdn0.iconfinder.com/data/icons/entypo/90/sea1-512.png") 0 0 no-repeat;
+}
+
+.today__text--description-thunderstorm::before,
+.today__text--description-thunder::before {
+  content: "";
+  background: url("https://image.flaticon.com/icons/png/512/71/71008.png") 0 0 no-repeat;
+}
+
+.today__text--description-snow::before {
+  content: "";
+  background: url("https://www.sunnysidechurch.org.uk/newsite/wp-content/uploads/2017/12/Weather-Snow-icon.png") 0 0 no-repeat;
+}
+
+.today__text--rain::before,
+.today__text--description-rain::before {
   content: "";
   background: url("https://image.flaticon.com/icons/svg/2948/2948175.svg") 0 0 no-repeat;
 }
@@ -269,7 +303,14 @@ input:focus {
 
 .today__text--rain::before,
 .today__text--wind::before,
-.today__text--humidity::before {
+.today__text--humidity::before,
+.today__text--description-clear::before,
+.today__text--description-clouds::before,
+.today__text--description-mist::before,
+.today__text--description-mist::before,
+.today__text--description-thunderstorm::before,
+.today__text--description-thunder::before,
+.today__text--description-snow::before {
   display: block;
   background-size: contain;
   width: 30px;
