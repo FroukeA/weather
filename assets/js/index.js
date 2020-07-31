@@ -2,355 +2,15 @@
 let favorites = {
   spring: {
     name: "Spring",
-    data: {
-      current: {
-        clouds: 40,
-        dew_point: 24.3,
-        dt: 1595528324,
-        feels_like: 37.57,
-        humidity: 59,
-        pressure: 1015,
-        sunrise: 1595504110,
-        sunset: 1595553632,
-        temp: 33.41,
-        uvi: 11.68,
-        visibility: 10000,
-        weather: [
-          {
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds",
-          },
-        ],
-        wind_deg: 60,
-        wind_speed: 2.6,
-      },
-      daily: [
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-        {
-          clouds: 40,
-          dew_point: 24.3,
-          dt: 1595527200,
-          feels_like: {
-            day: 36.96,
-            eve: 36.35,
-            morn: 36.96,
-            night: 31.7,
-          },
-          humidity: 59,
-          pressure: 1015,
-          sunrise: 1595504110,
-          sunset: 1595553632,
-          temp: 33.41,
-          uvi: 11.68,
-          visibility: 10000,
-          weather: [
-            {
-              description: "scattered clouds",
-              icon: "03d",
-              id: 802,
-              main: "Clouds",
-            },
-          ],
-          wind_deg: 63,
-          wind_speed: 3.48,
-        },
-      ],
-      lat: 30.09,
-      lon: -95.38,
-      timezone: "America/Chicago",
-      timezone_offset: -18000,
-    },
+    data: {},
   },
   almaty: {
     name: "Almaty",
-    data: {
-      coord: {
-        lon: -95.36,
-        lat: 29.76,
-      },
-      weather: [
-        {
-          id: 211,
-          main: "Thunderstorm",
-          description: "thunderstorm",
-          icon: "11d",
-          base: "stations",
-        },
-      ],
-      main: {
-        temp: 29.24,
-        feels_like: 33.43,
-        temp_min: 26,
-        temp_max: 32,
-        pressure: 1015,
-        humidity: 88,
-      },
-      visibility: 10000,
-      wind: {
-        speed: 5.1,
-        deg: 250,
-        gust: 8.2,
-      },
-      clouds: {
-        all: 75,
-      },
-      dt: 1595440017,
-      sys: {
-        type: 1,
-        id: 4850,
-        country: "US",
-        sunrise: 1595417710,
-        sunset: 1595467218,
-      },
-      timezone: -18000,
-      id: 4699066,
-      name: "Almaty",
-      cod: 200,
-    },
+    data: {},
   },
   izegem: {
     name: "Izegem",
-    data: {
-      coord: {
-        lon: -95.36,
-        lat: 29.76,
-      },
-      weather: [
-        {
-          id: 211,
-          main: "Thunderstorm",
-          description: "thunderstorm",
-          icon: "11d",
-          base: "stations",
-        },
-      ],
-      main: {
-        temp: 29.24,
-        feels_like: 33.43,
-        temp_min: 26,
-        temp_max: 32,
-        pressure: 1015,
-        humidity: 88,
-      },
-      visibility: 10000,
-      wind: {
-        speed: 5.1,
-        deg: 250,
-        gust: 8.2,
-      },
-      clouds: {
-        all: 75,
-      },
-      dt: 1595440017,
-      sys: {
-        type: 1,
-        id: 4850,
-        country: "US",
-        sunrise: 1595417710,
-        sunset: 1595467218,
-      },
-      timezone: -18000,
-      id: 4699066,
-      name: "Almaty",
-      cod: 200,
-    },
+    data: {},
   },
 };
 
@@ -416,26 +76,9 @@ let currentPosition = null;
 
 let currentCityName = null;
 
-let city = null;
-
 const currentDate = new Date();
 
 let currentDay = null;
-
-const months = [
-  "Januari",
-  "Februari",
-  "March",
-  "April",
-  "May",
-  "June",
-  "July",
-  "August",
-  "September",
-  "October",
-  "November",
-  "December",
-];
 
 const days = [
   "Sunday",
@@ -469,7 +112,6 @@ const handleDisplayContent = (array) => {
 const handleAddClass = (element, value) => {
   element.classList.add(value);
 };
-
 const handleGetCurrentLocation = (event) => {
   navigator.geolocation.getCurrentPosition(handlePosition);
 };
@@ -507,6 +149,16 @@ const handleDisplayCurrentWeatherLocation = () => {
   ];
 
   const div = document.querySelector("#weather__description");
+  div.className.split(" ").forEach((element) => {
+    if (element.includes("today__text--description-")) {
+      div.classList.remove(element);
+    }
+  });
+  // div.className = div.className.replace(
+  //   new RegExp("(?:^|s)" + "today__text--description-" + "(?!S)"),
+  //   ""
+  // );
+
   handleAddClass(
     div,
     `today__text--description-${currentCity.data.current.weather[0].main.toLowerCase()}`
@@ -518,7 +170,6 @@ const handleDisplayCurrentWeatherLocation = () => {
 const handleDisplayHourlyWeatherLocation = () => {
   const list = document.querySelector("#today__temperatureList");
   list.innerHTML = "";
-  let tempCurrentDay = currentDay;
 
   currentCity.data.hourly.map((item, i) => {
     const div = document.createElement("div");
@@ -638,22 +289,6 @@ const handleSubmitCity = (event) => {
 
   const city = document.querySelector("#searchForm__field--city").value;
 
-  // apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city.toLowerCase()}&appid=${apiKey}&units=metric`;
-
-  // if (city.length > 0) {
-  //   axios
-  //     .get(apiUrl)
-  //     .then(response => {
-  //       currentCity.data = response.data;
-  //       handleCurrentForcast(response);
-  //     })
-  //     .catch(error => {
-  //       console.log("ERROR: value NOT in list", error.response);
-  //       sentence = `Sorry, we do not know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`;
-  //       handleGreeting(sentence);
-  //     });
-  // }
-
   const apiUrl1 = `https://api.openweathermap.org/data/2.5/weather?q=${city.toLowerCase()}&appid=${apiKey}&units=metric`;
 
   axios
@@ -676,23 +311,13 @@ const handleSubmitCity = (event) => {
     })
     .catch((error) => {
       console.log(error.response);
+      sentence = `Sorry, we do not know the weather for this city, try going to https://www.google.com/search?q=weather+${city}`;
+      handleGreeting(sentence);
     });
-};
-
-const handleTestValue = (value) => {
-  if (weather[value] !== undefined) {
-    return true;
-  } else {
-    return false;
-  }
 };
 
 const handleGreeting = (greeting) => {
   alert(greeting);
-};
-
-const handleGetValue = (value) => {
-  return weather[value];
 };
 
 // Denoting temperature
@@ -800,7 +425,7 @@ const handleDisplayFavorites = () => {
     const li = document.createElement("li");
 
     li.innerHTML = `
-      <input class='favorites__field favorites__field--hide' type='checkbox' id='${value.name.toLowerCase()}' />
+      <input class='favorites__field favorites__field--hide favorites__field--${key}' type='checkbox' id='${value.name.toLowerCase()}' />
       <label class='favorites__text' for='${value.name.toLowerCase()}'>${
       value.name
     }</label>`;
@@ -820,7 +445,6 @@ const handleDisplayFavorites = () => {
 // Weather API
 
 const handleGetWeatherCurrentPosition = () => {
-  // apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
   const apiUrl1 = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${long}&appid=${apiKey}&units=metric`;
   apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minute&appid=${apiKey}&units=metric`;
 
@@ -852,21 +476,9 @@ const handlePosition = (response) => {
   long = currentPosition.coords.longitude;
 
   handleGetWeatherCurrentPosition();
-  // axios
-  //   .get(
-  //     `https://api.bigdatacloud.net/data/reverse-geocode-client?latitude=${lat}&longitude=${long}&localityLanguage=en`
-  //   )
-  //   .then(response => {
-  //     currentCity.name = response.data.city;
-  //     handleGetWeatherCurrentPosition();
-  //   })
-  //   .catch(error => {
-  //     console.log(error.response);
-  //   });
 };
 
 function handleCurrentForcast(response) {
-  console.log(response);
   currentCity.name = currentCityName;
 
   handleDisplayCurrentWeatherLocation();
