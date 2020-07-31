@@ -93,12 +93,12 @@ const days = [
 // common
 const handleCelsiusToFahrenheit = (value) => {
   const temp = (value * 9) / 5 + 32;
-  return temp.toFixed(1);
+  return temp;
 };
 
 const handleFahrenheitToCelsius = (value) => {
   const temp = ((value - 32) * 5) / 9;
-  return temp.toFixed(1);
+  return temp;
 };
 
 const handleDisplayContent = (array) => {
@@ -472,7 +472,6 @@ const handlePosition = (response) => {
 };
 
 function handleCurrentForcast(response) {
-  console.log(111, response);
   currentCity.name = currentCityName;
 
   handleDisplayCurrentWeatherLocation();
