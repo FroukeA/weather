@@ -150,6 +150,16 @@ const handleDisplayCurrentWeatherLocation = () => {
   ];
 
   const div = document.querySelector("#weather__description");
+  div.className.split(" ").forEach((element) => {
+    if (element.includes("today__text--description-")) {
+      div.classList.remove(element);
+    }
+  });
+  // div.className = div.className.replace(
+  //   new RegExp("(?:^|s)" + "today__text--description-" + "(?!S)"),
+  //   ""
+  // );
+
   handleAddClass(
     div,
     `today__text--description-${currentCity.data.current.weather[0].main.toLowerCase()}`
