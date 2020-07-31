@@ -1,47 +1,4 @@
 // Data
-let weather = {
-  paris: {
-    name: "Paris",
-    temp: 19.7,
-    humidity: 80
-  },
-  tokyo: {
-    name: "Tokyo",
-    temp: 17.3,
-    humidity: 50
-  },
-  lisbon: {
-    name: "Lisbon",
-    temp: 30.2,
-    humidity: 20
-  },
-  "san francisco": {
-    name: "San Francisco",
-    temp: 20.9,
-    humidity: 100
-  },
-  moscow: {
-    name: "Moscow",
-    temp: -5,
-    humidity: 20
-  },
-  spring: {
-    name: "Spring",
-    temp: 30.2,
-    humidity: 50
-  },
-  almaty: {
-    name: "Almaty",
-    temp: 20.9,
-    humidity: 100
-  },
-  izegem: {
-    name: "Izegem",
-    temp: -5,
-    humidity: 20
-  }
-};
-
 let favorites = {
   spring: {
     name: "Spring",
@@ -58,16 +15,19 @@ let favorites = {
         temp: 33.41,
         uvi: 11.68,
         visibility: 10000,
-        weather: [{
-          description: "scattered clouds",
-          icon: "03d",
-          id: 802,
-          main: "Clouds"
-        }],
+        weather: [
+          {
+            description: "scattered clouds",
+            icon: "03d",
+            id: 802,
+            main: "Clouds",
+          },
+        ],
         wind_deg: 60,
         wind_speed: 2.6,
       },
-      daily: [{
+      daily: [
+        {
           clouds: 40,
           dew_point: 24.3,
           dt: 1595527200,
@@ -75,7 +35,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -84,14 +44,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -101,7 +63,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -110,14 +72,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -127,7 +91,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -136,14 +100,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -153,7 +119,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -162,14 +128,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -179,7 +147,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -188,14 +156,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -205,7 +175,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -214,14 +184,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -231,7 +203,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -240,14 +212,16 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
+          wind_speed: 3.48,
         },
         {
           clouds: 40,
@@ -257,7 +231,7 @@ let favorites = {
             day: 36.96,
             eve: 36.35,
             morn: 36.96,
-            night: 31.7
+            night: 31.7,
           },
           humidity: 59,
           pressure: 1015,
@@ -266,52 +240,56 @@ let favorites = {
           temp: 33.41,
           uvi: 11.68,
           visibility: 10000,
-          weather: [{
-            description: "scattered clouds",
-            icon: "03d",
-            id: 802,
-            main: "Clouds"
-          }],
+          weather: [
+            {
+              description: "scattered clouds",
+              icon: "03d",
+              id: 802,
+              main: "Clouds",
+            },
+          ],
           wind_deg: 63,
-          wind_speed: 3.48
-        }
+          wind_speed: 3.48,
+        },
       ],
       lat: 30.09,
       lon: -95.38,
       timezone: "America/Chicago",
-      timezone_offset: -18000
-    }
+      timezone_offset: -18000,
+    },
   },
   almaty: {
     name: "Almaty",
     data: {
       coord: {
         lon: -95.36,
-        lat: 29.76
+        lat: 29.76,
       },
-      weather: [{
-        id: 211,
-        main: "Thunderstorm",
-        description: "thunderstorm",
-        icon: "11d",
-        base: "stations"
-      }],
+      weather: [
+        {
+          id: 211,
+          main: "Thunderstorm",
+          description: "thunderstorm",
+          icon: "11d",
+          base: "stations",
+        },
+      ],
       main: {
         temp: 29.24,
         feels_like: 33.43,
         temp_min: 26,
         temp_max: 32,
         pressure: 1015,
-        humidity: 88
+        humidity: 88,
       },
       visibility: 10000,
       wind: {
         speed: 5.1,
         deg: 250,
-        gust: 8.2
+        gust: 8.2,
       },
       clouds: {
-        all: 75
+        all: 75,
       },
       dt: 1595440017,
       sys: {
@@ -319,44 +297,46 @@ let favorites = {
         id: 4850,
         country: "US",
         sunrise: 1595417710,
-        sunset: 1595467218
+        sunset: 1595467218,
       },
       timezone: -18000,
       id: 4699066,
       name: "Almaty",
-      cod: 200
-    }
+      cod: 200,
+    },
   },
   izegem: {
     name: "Izegem",
     data: {
       coord: {
         lon: -95.36,
-        lat: 29.76
+        lat: 29.76,
       },
-      weather: [{
-        id: 211,
-        main: "Thunderstorm",
-        description: "thunderstorm",
-        icon: "11d",
-        base: "stations"
-      }],
+      weather: [
+        {
+          id: 211,
+          main: "Thunderstorm",
+          description: "thunderstorm",
+          icon: "11d",
+          base: "stations",
+        },
+      ],
       main: {
         temp: 29.24,
         feels_like: 33.43,
         temp_min: 26,
         temp_max: 32,
         pressure: 1015,
-        humidity: 88
+        humidity: 88,
       },
       visibility: 10000,
       wind: {
         speed: 5.1,
         deg: 250,
-        gust: 8.2
+        gust: 8.2,
       },
       clouds: {
-        all: 75
+        all: 75,
       },
       dt: 1595440017,
       sys: {
@@ -364,14 +344,14 @@ let favorites = {
         id: 4850,
         country: "US",
         sunrise: 1595417710,
-        sunset: 1595467218
+        sunset: 1595467218,
       },
       timezone: -18000,
       id: 4699066,
       name: "Almaty",
-      cod: 200
-    }
-  }
+      cod: 200,
+    },
+  },
 };
 
 let sentence = "";
@@ -381,31 +361,33 @@ let currentCity = {
   data: {
     coord: {
       lon: -95.36,
-      lat: 29.76
+      lat: 29.76,
     },
-    weather: [{
-      id: 211,
-      main: "Thunderstorm",
-      description: "thunderstorm",
-      icon: "11d",
-      base: "stations"
-    }],
+    weather: [
+      {
+        id: 211,
+        main: "Thunderstorm",
+        description: "thunderstorm",
+        icon: "11d",
+        base: "stations",
+      },
+    ],
     main: {
       temp: 29.24,
       feels_like: 33.43,
       temp_min: 26,
       temp_max: 32,
       pressure: 1015,
-      humidity: 88
+      humidity: 88,
     },
     visibility: 10000,
     wind: {
       speed: 5.1,
       deg: 250,
-      gust: 8.2
+      gust: 8.2,
     },
     clouds: {
-      all: 75
+      all: 75,
     },
     dt: 1595440017,
     sys: {
@@ -413,13 +395,13 @@ let currentCity = {
       id: 4850,
       country: "US",
       sunrise: 1595417710,
-      sunset: 1595467218
+      sunset: 1595467218,
     },
     timezone: -18000,
     id: 4699066,
     name: "Houston",
-    cod: 200
-  }
+    cod: 200,
+  },
 };
 
 const apiKey = "cce07da6a69974d4cbb12e9fb81759f5";
@@ -452,7 +434,7 @@ const months = [
   "September",
   "October",
   "November",
-  "December"
+  "December",
 ];
 
 const days = [
@@ -462,65 +444,73 @@ const days = [
   "Wednesday",
   "Thursday",
   "Friday",
-  "Saturday"
+  "Saturday",
 ];
 
 // common
-const handleCelsiusToFahrenheit = value => {
+const handleCelsiusToFahrenheit = (value) => {
   const temp = (value * 9) / 5 + 32;
   return temp.toFixed(1);
 };
 
-const handleFahrenheitToCelsius = value => {
+const handleFahrenheitToCelsius = (value) => {
   const temp = ((value - 32) * 5) / 9;
   return temp.toFixed(1);
 };
 
-const handleDisplayContent = array => {
-  array.forEach(element => {
+const handleDisplayContent = (array) => {
+  array.forEach((element) => {
     const item = document.querySelector(element.class);
 
     item.innerHTML = element.content;
   });
 };
 
-const checkStatus = response => {
-  if (!response.ok) {
-    throw Error(response.statusText);
-  }
-  return response;
+const handleAddClass = (element, value) => {
+  element.classList.add(value);
 };
 
-const handleGetCurrentLocation = event => {
+const handleGetCurrentLocation = (event) => {
   navigator.geolocation.getCurrentPosition(handlePosition);
 };
 
 const handleDisplayCurrentWeatherLocation = () => {
-  const elements = [{
+  const elements = [
+    {
       class: ".today__title--location",
-      content: currentCity.name
+      content: currentCity.name,
     },
     {
       class: ".today__text--temperature",
-      content: currentCity.data.current.temp
+      content: currentCity.data.current.temp.toFixed(1),
     },
     {
       class: ".today__text--humidity",
-      content: currentCity.data.current.humidity
+      content: currentCity.data.current.humidity,
     },
     {
       class: ".today__text--cold",
-      content: currentCity.data.daily[0].temp.min
+      content: currentCity.data.daily[0].temp.min.toFixed(1),
     },
     {
       class: ".today__text--hot",
-      content: currentCity.data.daily[0].temp.max
+      content: currentCity.data.daily[0].temp.max.toFixed(1),
     },
     {
       class: ".today__text--wind",
-      content: currentCity.data.current.wind_speed
-    }
+      content: currentCity.data.current.wind_speed,
+    },
+    {
+      class: ".today__text--description",
+      content: currentCity.data.current.weather[0].description,
+    },
   ];
+
+  const div = document.querySelector("#weather__description");
+  handleAddClass(
+    div,
+    `today__text--description-${currentCity.data.current.weather[0].main.toLowerCase()}`
+  );
 
   handleDisplayContent(elements);
 };
@@ -543,7 +533,7 @@ const handleDisplayHourlyWeatherLocation = () => {
       <dd>
         <article>
           <h4 class='today__title today__title--nowrap today__title--center'>
-            ${item.temp}&#176;
+            ${item.temp.toFixed(1)}&#176;
             <span>
               C
             </span>
@@ -552,16 +542,18 @@ const handleDisplayHourlyWeatherLocation = () => {
           <i class='fas fa-sun'></i>
 
           <p class='today__text today__text--center'>
-            ${date.getHours()}:${(date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes())}
+            ${date.getHours()}:${
+      date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
+    }
           </p>
         </article>
       </dd>`;
 
-    div.classList.add("today__temperatureItem");
+    handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
-  })
-}
+  });
+};
 
 const handleDisplayDailyWeatherLocation = () => {
   const list = document.querySelector("#week__list");
@@ -586,7 +578,7 @@ const handleDisplayDailyWeatherLocation = () => {
           <dd class='week__content'>
             <article>
               <h4 class='today__title today__title--center'>
-                ${item.temp.day}&#176;
+                ${item.temp.day.toFixed(1)}&#176;
                 <span>
                   C
                 </span>
@@ -604,40 +596,41 @@ const handleDisplayDailyWeatherLocation = () => {
         </div>
       </div>`;
 
-      div.classList.add("col");
-      div.classList.add("col-12");
-      div.classList.add("col-sm-6");
-      div.classList.add("week__item");
+      handleAddClass(div, "col");
+      handleAddClass(div, "col-12");
+      handleAddClass(div, "col-sm-6");
+      handleAddClass(div, "week__item");
 
       list.appendChild(div);
     }
-  })
-}
+  });
+};
 
 // Date
 const handleChangeDate = () => {
   const minutes =
-    currentDate.getMinutes() < 10 ?
-    "0" + currentDate.getMinutes() :
-    currentDate.getMinutes();
+    currentDate.getMinutes() < 10
+      ? "0" + currentDate.getMinutes()
+      : currentDate.getMinutes();
 
-  currentDay = currentDate.getDay()
+  currentDay = currentDate.getDay();
 
-  const elements = [{
+  const elements = [
+    {
       class: ".today__text--dayName",
-      content: days[currentDay]
+      content: days[currentDay],
     },
     {
       class: ".today__text--hour",
-      content: `${currentDate.getHours()}: ${minutes}`
-    }
+      content: `${currentDate.getHours()}: ${minutes}`,
+    },
   ];
 
   handleDisplayContent(elements);
 };
 
 // SearchEngine
-const handleSubmitCity = event => {
+const handleSubmitCity = (event) => {
   event.preventDefault();
 
   handleUnCheckFavorites("all");
@@ -665,7 +658,7 @@ const handleSubmitCity = event => {
 
   axios
     .get(apiUrl1)
-    .then(response => {
+    .then((response) => {
       currentCityName = response.data.name;
       lat = response.data.coord.lat;
       long = response.data.coord.lon;
@@ -673,20 +666,20 @@ const handleSubmitCity = event => {
       apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minute&appid=${apiKey}&units=metric`;
       axios
         .get(apiUrl)
-        .then(response => {
+        .then((response) => {
           currentCity.data = response.data;
           handleCurrentForcast(response);
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error.response);
         });
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error.response);
     });
 };
 
-const handleTestValue = value => {
+const handleTestValue = (value) => {
   if (weather[value] !== undefined) {
     return true;
   } else {
@@ -694,37 +687,40 @@ const handleTestValue = value => {
   }
 };
 
-const handleGreeting = greeting => {
+const handleGreeting = (greeting) => {
   alert(greeting);
 };
 
-const handleGetValue = value => {
+const handleGetValue = (value) => {
   return weather[value];
 };
 
 // Denoting temperature
 
-const handleCheckCelsius = event => {
+const handleCheckCelsius = (event) => {
   const tempCurrentCity = currentCity;
 
-  currentCity.data.current.temp = handleFahrenheitToCelsius(tempCurrentCity.data.current.temp);
+  currentCity.data.current.temp = handleFahrenheitToCelsius(
+    tempCurrentCity.data.current.temp
+  ).toFixed(1);
 
   currentCity.data.hourly.map((item, i) => {
-    item.temp = handleFahrenheitToCelsius(item.temp)
+    item.temp = handleFahrenheitToCelsius(item.temp).toFixed(1);
   });
 
   handleDisplayCurrentWeatherLocation();
   handleDisplayHourlyWeatherLocation();
 };
 
-const handleCheckFahrenheit = event => {
+const handleCheckFahrenheit = (event) => {
   const tempCurrentCity = currentCity;
 
-  console.log(tempCurrentCity, tempCurrentCity.data.current.temp);
-  currentCity.data.current.temp = handleCelsiusToFahrenheit(tempCurrentCity.data.current.temp);
+  currentCity.data.current.temp = handleCelsiusToFahrenheit(
+    tempCurrentCity.data.current.temp
+  ).toFixed(1);
 
   currentCity.data.hourly.map((item, i) => {
-    item.temp = handleCelsiusToFahrenheit(item.temp)
+    item.temp = handleCelsiusToFahrenheit(item.temp).toFixed(1);
   });
 
   handleDisplayCurrentWeatherLocation();
@@ -732,7 +728,7 @@ const handleCheckFahrenheit = event => {
 };
 
 // favorites
-const handleClickFavoriteItem = event => {
+const handleClickFavoriteItem = (event) => {
   handleUnCheckFavorites(event.target.id);
 
   // currentCity = favorites[event.target.id];
@@ -743,7 +739,7 @@ const handleClickFavoriteItem = event => {
 
   axios
     .get(apiUrl1)
-    .then(response => {
+    .then((response) => {
       currentCity.name = response.data.name;
 
       lat = response.data.coord.lat;
@@ -752,30 +748,30 @@ const handleClickFavoriteItem = event => {
       apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${lat}&lon=${long}&exclude=minute&appid=${apiKey}&units=metric`;
       axios
         .get(apiUrl)
-        .then(response => {
+        .then((response) => {
           currentCity.data = response.data;
           handleDisplayCurrentWeatherLocation();
         })
-        .catch(error => {
+        .catch((error) => {
           console.log(error.response);
         });
     })
-    .catch(error => {
+    .catch((error) => {
       console.log(error.response);
     });
 };
 
-const handleUnCheckFavorites = value => {
-  document.querySelectorAll(".favorites__field").forEach(element => {
+const handleUnCheckFavorites = (value) => {
+  document.querySelectorAll(".favorites__field").forEach((element) => {
     if (element.id !== value || value === "all") {
       element.checked = "";
     }
   });
   document.querySelector("#fahrenheit").checked = "";
-  document.querySelector("#celcius").checked = 'checked';
+  document.querySelector("#celcius").checked = "checked";
 };
 
-const handleClickFavorite = event => {
+const handleClickFavorite = (event) => {
   if (event.target.checked) {
     handleAddFavorite();
   } else {
@@ -783,7 +779,7 @@ const handleClickFavorite = event => {
   }
 };
 
-const handleAddFavorite = event => {
+const handleAddFavorite = (event) => {
   favorites[currentCity.name.toLowerCase()] = currentCity;
 
   handleDisplayFavorites();
@@ -815,7 +811,7 @@ const handleDisplayFavorites = () => {
 
     document
       .querySelectorAll(".favorites__field")
-      .forEach(element =>
+      .forEach((element) =>
         element.addEventListener("click", handleClickFavoriteItem)
       );
   }
@@ -831,26 +827,26 @@ const handleGetWeatherCurrentPosition = () => {
   if (lat && long) {
     axios
       .get(apiUrl1)
-      .then(response => {
+      .then((response) => {
         currentCityName = response.data.name;
         axios
           .get(apiUrl)
-          .then(response => {
+          .then((response) => {
             currentCity.data = response.data;
             handleCurrentForcast(response);
           })
-          .catch(error => {
+          .catch((error) => {
             console.log(error.response);
           });
       })
-      .catch(error => {
+      .catch((error) => {
         console.log(error.response);
       });
   }
 };
 
 // Geolocation API
-const handlePosition = response => {
+const handlePosition = (response) => {
   currentPosition = response;
   lat = currentPosition.coords.latitude;
   long = currentPosition.coords.longitude;
@@ -870,7 +866,7 @@ const handlePosition = response => {
 };
 
 function handleCurrentForcast(response) {
-  console.log(response)
+  console.log(response);
   currentCity.name = currentCityName;
 
   handleDisplayCurrentWeatherLocation();
@@ -883,7 +879,7 @@ const init = () => {
 
   document
     .querySelectorAll("#button--currentLocation")
-    .forEach(element =>
+    .forEach((element) =>
       element.addEventListener("click", handleGetCurrentLocation)
     );
 
@@ -901,7 +897,7 @@ const init = () => {
 
   document
     .querySelectorAll(".favorites__field")
-    .forEach(element =>
+    .forEach((element) =>
       element.addEventListener("click", handleClickFavoriteItem)
     );
 
