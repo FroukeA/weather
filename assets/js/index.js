@@ -109,6 +109,7 @@ const handleDisplayContent = (array) => {
   });
 };
 
+
 const handleAddClass = (element, value) => {
   element.classList.add(value);
 };
@@ -346,6 +347,7 @@ const handleCheckFahrenheit = (event) => {
 
   currentCity.data.hourly.map((item, i) => {
     item.temp = handleCelsiusToFahrenheit(item.temp).toFixed(1);
+
   });
 
   handleDisplayCurrentWeatherLocation();
