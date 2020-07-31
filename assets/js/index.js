@@ -320,10 +320,10 @@ const handleCheckCelsius = (event) => {
 
   currentCity.data.current.temp = handleFahrenheitToCelsius(
     tempCurrentCity.data.current.temp
-  ).toFixed(1);
+  );
 
   currentCity.data.hourly.map((item, i) => {
-    item.temp = handleFahrenheitToCelsius(item.temp).toFixed(1);
+    item.temp = handleFahrenheitToCelsius(item.temp);
   });
 
   handleDisplayCurrentWeatherLocation();
@@ -335,10 +335,10 @@ const handleCheckFahrenheit = (event) => {
 
   currentCity.data.current.temp = handleCelsiusToFahrenheit(
     tempCurrentCity.data.current.temp
-  ).toFixed(1);
+  );
 
   currentCity.data.hourly.map((item, i) => {
-    item.temp = handleCelsiusToFahrenheit(item.temp).toFixed(1);
+    item.temp = handleCelsiusToFahrenheit(item.temp);
   });
 
   handleDisplayCurrentWeatherLocation();
@@ -472,6 +472,7 @@ const handlePosition = (response) => {
 };
 
 function handleCurrentForcast(response) {
+  console.log(111, response);
   currentCity.name = currentCityName;
 
   handleDisplayCurrentWeatherLocation();
