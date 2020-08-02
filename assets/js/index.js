@@ -1,7 +1,7 @@
 // Data
 let favorites = {
   spring: {
-    name: "China",
+    name: "Spring",
     data: {},
   },
   almaty: {
@@ -93,12 +93,12 @@ const days = [
 // common
 const handleCelsiusToFahrenheit = (value) => {
   const temp = (value * 9) / 5 + 32;
-  return temp.toFixed(1);
+  return temp;
 };
 
 const handleFahrenheitToCelsius = (value) => {
   const temp = ((value - 32) * 5) / 9;
-  return temp.toFixed(1);
+  return temp;
 };
 
 const handleDisplayContent = (array) => {
@@ -136,7 +136,7 @@ const handleDisplayCurrentWeatherLocation = () => {
     },
     {
       class: ".today__text--temperature",
-      content: currentCity.data.current.temp,
+      content: currentCity.data.current.temp.toFixed(1),
     },
     {
       class: ".today__text--humidity",
@@ -144,17 +144,29 @@ const handleDisplayCurrentWeatherLocation = () => {
     },
     {
       class: ".today__text--cold",
-      content: currentCity.data.daily[0].temp.min,
+      content: currentCity.data.daily[0].temp.min.toFixed(1),
     },
     {
       class: ".today__text--hot",
-      content: currentCity.data.daily[0].temp.max,
+      content: currentCity.data.daily[0].temp.max.toFixed(1),
     },
     {
       class: ".today__text--wind",
       content: currentCity.data.current.wind_speed,
     },
+    {
+      class: ".today__text--description",
+      content: currentCity.data.current.weather[0].description,
+    },
   ];
+
+  const div = document.querySelector("#weather__description");
+
+  handleDisplayWeatherDescription(
+    div,
+    "today__text--description-",
+    currentCity.data.current.weather
+  );
 
   handleDisplayContent(elements);
 };
@@ -164,6 +176,7 @@ const handleDisplayHourlyWeatherLocation = () => {
   list.innerHTML = "";
 
   currentCity.data.hourly.map((item, i) => {
+    console.log(item);
     const div = document.createElement("div");
     const timestamp = item.dt;
 
@@ -176,13 +189,13 @@ const handleDisplayHourlyWeatherLocation = () => {
       <dd>
         <article>
           <h4 class='today__title today__title--nowrap today__title--center'>
-            ${item.temp}&#176;
+            ${item.temp.toFixed(1)}&#176;
             <span>
               C
             </span>
           </h4>
 
-          <i class='fas fa-sun'></i>
+          <p class='today__text today__text--description' id='weather__description--${i}'></p>
 
           <p class='today__text today__text--center'>
             ${date.getHours()}:${
@@ -191,10 +204,18 @@ const handleDisplayHourlyWeatherLocation = () => {
           </p>
         </article>
       </dd>`;
-
+    
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
+
+    const p = document.querySelector(`#weather__description--${i}`);
+
+    handleDisplayWeatherDescription(
+      p,
+      "today__text--description-",
+      item.weather
+    );
   });
 };
 
@@ -221,7 +242,7 @@ const handleDisplayDailyWeatherLocation = () => {
           <dd class='week__content'>
             <article>
               <h4 class='today__title today__title--center'>
-                ${item.temp.day}&#176;
+                ${item.temp.day.toFixed(1)}&#176;
                 <span>
                   C
                 </span>
@@ -239,10 +260,10 @@ const handleDisplayDailyWeatherLocation = () => {
         </div>
       </div>`;
 
-      div.classList.add("col");
-      div.classList.add("col-12");
-      div.classList.add("col-sm-6");
-      div.classList.add("week__item");
+      handleAddClass(div, "col");
+      handleAddClass(div, "col-12");
+      handleAddClass(div, "col-sm-6");
+      handleAddClass(div, "week__item");
 
       list.appendChild(div);
     }
@@ -262,10 +283,6 @@ const handleChangeDate = () => {
     {
       class: ".today__text--dayName",
       content: days[currentDay],
-    },
-    {
-      class: ".today__text--hour",
-      content: `${currentDate.getHours()}: ${minutes}`,
     },
   ];
 
