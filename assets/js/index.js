@@ -206,15 +206,6 @@ const handleDisplayHourlyWeatherLocation = () => {
         </article>
       </dd>`;
 
-    // const p = document.querySelector(`#weather__description--${i}`);
-    // console.log()
-
-    // // handleDisplayWeatherDescription(
-    // //   p,
-    // //   "today__text--description-",
-    // //   item.weather
-    // // );
-
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
