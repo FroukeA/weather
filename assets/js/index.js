@@ -110,7 +110,6 @@ const handleDisplayContent = (array) => {
 };
 
 const handleDisplayWeatherDescription = (element, value, data, v) => {
-  console.log(v, element, value, data);
   element.className.split(" ").forEach((item) => {
     if (item.includes("today__text--description-")) {
       element.classList.remove(item);
@@ -205,16 +204,7 @@ const handleDisplayHourlyWeatherLocation = () => {
           </p>
         </article>
       </dd>`;
-
-    // const p = document.querySelector(`#weather__description--${i}`);
-    // console.log()
-
-    // // handleDisplayWeatherDescription(
-    // //   p,
-    // //   "today__text--description-",
-    // //   item.weather
-    // // );
-
+    
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
