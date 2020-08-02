@@ -343,7 +343,6 @@ input:focus {
 .today__text--description-10d:before,
 .today__text--description-11d::before,
 .today__text--description-13d::before,
-.today__text--description-clouds::before,
 .today__text--description-50d::before {
   display: block;
   background-size: contain;
