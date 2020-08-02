@@ -110,7 +110,6 @@ const handleDisplayContent = (array) => {
 };
 
 const handleDisplayWeatherDescription = (element, value, data, v) => {
-  console.log(v, element, value, data);
   element.className.split(" ").forEach((item) => {
     if (item.includes("today__text--description-")) {
       element.classList.remove(item);
