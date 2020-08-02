@@ -195,7 +195,7 @@ const handleDisplayHourlyWeatherLocation = () => {
             </span>
           </h4>
 
-          <p class='today__text today__text--description' id='weather__description--${i}'></p>
+          <p class='today__text today__text--description today__text--center' id='weather__description--${i}-hourly'></p>
 
           <p class='today__text today__text--center'>
             ${date.getHours()}:${
@@ -204,12 +204,12 @@ const handleDisplayHourlyWeatherLocation = () => {
           </p>
         </article>
       </dd>`;
-    
+
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
 
-    const p = document.querySelector(`#weather__description--${i}`);
+    const p = document.querySelector(`#weather__description--${i}-hourly`);
 
     handleDisplayWeatherDescription(
       p,
@@ -248,7 +248,7 @@ const handleDisplayDailyWeatherLocation = () => {
                 </span>
               </h4>
 
-              <i class='fas fa-sun'></i>
+              <p class='today__text today__text--description today__text--center' id='weather__description--${i}-daily'></p>
               
               <p class='today__text today__text--center'>
                 <small>
@@ -266,6 +266,14 @@ const handleDisplayDailyWeatherLocation = () => {
       handleAddClass(div, "week__item");
 
       list.appendChild(div);
+
+      const p = document.querySelector(`#weather__description--${i}-daily`);
+
+      handleDisplayWeatherDescription(
+        p,
+        "today__text--description-",
+        item.weather
+      );
     }
   });
 };
