@@ -288,7 +288,7 @@ input:focus {
 
 .today__text--description-01n::before {
   content: "";
-  background: url("https: //cdn.onlinewebfonts.com/svg/img_547895.png") 0 0 no-repeat;
+  background: url("https://cdn.onlinewebfonts.com/svg/img_547895.png") 0 0 no-repeat;
 }
 
 .today__text--description-02d::before {
