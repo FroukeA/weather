@@ -176,7 +176,6 @@ const handleDisplayHourlyWeatherLocation = () => {
   list.innerHTML = "";
 
   currentCity.data.hourly.map((item, i) => {
-    console.log(item);
     const div = document.createElement("div");
     const timestamp = item.dt;
 
