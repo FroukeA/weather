@@ -109,19 +109,17 @@ const handleDisplayContent = (array) => {
   });
 };
 
-const handleDisplayWeatherDescription = (element, value) => {
+const handleDisplayWeatherDescription = (element, value, data, v) => {
+  console.log(v, element, value, data);
   element.className.split(" ").forEach((item) => {
     if (item.includes("today__text--description-")) {
       element.classList.remove(item);
     }
   });
 
-  console.log(currentCity.data.current.weather);
-
-  handleAddClass(
-    element,
-    `${value}${currentCity.data.current.weather[0].icon}`
-  );
+  data.forEach((item) => {
+    handleAddClass(element, `${value}${item.icon}`);
+  });
 };
 
 const handleAddClass = (element, value) => {
@@ -165,7 +163,11 @@ const handleDisplayCurrentWeatherLocation = () => {
 
   const div = document.querySelector("#weather__description");
 
-  handleDisplayWeatherDescription(div, "today__text--description-");
+  handleDisplayWeatherDescription(
+    div,
+    "today__text--description-",
+    currentCity.data.current.weather
+  );
 
   handleDisplayContent(elements);
 };
@@ -175,6 +177,7 @@ const handleDisplayHourlyWeatherLocation = () => {
   list.innerHTML = "";
 
   currentCity.data.hourly.map((item, i) => {
+    console.log(item);
     const div = document.createElement("div");
     const timestamp = item.dt;
 
@@ -193,7 +196,7 @@ const handleDisplayHourlyWeatherLocation = () => {
             </span>
           </h4>
 
-          <i class='fas fa-sun'></i>
+          <p class='today__text today__text--description' id='weather__description--${i}'></p>
 
           <p class='today__text today__text--center'>
             ${date.getHours()}:${
@@ -203,9 +206,26 @@ const handleDisplayHourlyWeatherLocation = () => {
         </article>
       </dd>`;
 
+    // const p = document.querySelector(`#weather__description--${i}`);
+    // console.log()
+
+    // // handleDisplayWeatherDescription(
+    // //   p,
+    // //   "today__text--description-",
+    // //   item.weather
+    // // );
+
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
+
+    const p = document.querySelector(`#weather__description--${i}`);
+
+    handleDisplayWeatherDescription(
+      p,
+      "today__text--description-",
+      item.weather
+    );
   });
 };
 
