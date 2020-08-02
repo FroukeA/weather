@@ -180,10 +180,15 @@ body {
 .today__text--description-04d,
 .today__text--description-04n,
 .today__text--description-09d,
+.today__text--description-09n,
 .today__text--description-10d,
+.today__text--description-10n,
 .today__text--description-11d,
+.today__text--description-11n,
 .today__text--description-13d,
-.today__text--description-50d {
+.today__text--description-13n,
+.today__text--description-50d,
+.today__text--description-50n {
   display: flex;
   align-items: center;
 }
@@ -261,7 +266,8 @@ input:focus {
 }
 
 .today__text--rain::before,
-.today__text--description-09d:before {
+.today__text--description-09d:before,
+.today__text--description-09n:before {
   content: "";
   background: url("https://image.flaticon.com/icons/svg/2948/2948175.svg") 0 0 no-repeat;
 }
@@ -288,7 +294,7 @@ input:focus {
 
 .today__text--description-02d::before {
   content: "";
-  background: url("https://www.kindpng.com/picc/m/381-3817814_cloud-sun-sun-and-cloud-icon-png-transparent.png") 0 0 no-repeat;
+  background: url("https://www.pinclipart.com/picdir/big/205-2059648_pix-cloud-sun-icon-png-clipart.png") 0 0 no-repeat;
 }
 
 .today__text--description-02n::before {
@@ -313,19 +319,27 @@ input:focus {
   background: url("data:image/png;base64,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") 0 0 no-repeat;
 }
 
-.today__text--description-11d::before {
+.today__text--description-10n:before {
+  content: "";
+  background: url("https://www.shareicon.net/data/2015/12/01/680847_moon_512x512.png") 0 0 no-repeat;
+}
+
+.today__text--description-11d::before,
+.today__text--description-11n::before {
   content: "";
   background: url("https://image.flaticon.com/icons/png/512/71/71008.png") 0 0 no-repeat;
 }
 
-.today__text--description-13d::before {
+.today__text--description-13d::before,
+.today__text--description-13n::before {
   content: "";
   background: url("https://cdn.onlinewebfonts.com/svg/img_535543.png") 0 0 no-repeat;
 }
 
-.today__text--description-50d::before {
+.today__text--description-50d::before,
+.today__text--description-50n::before {
   content: "";
-  background: url("https://cdn0.iconfinder.com/data/icons/enthttps://www.pngrepo.com/png/28814/180/mist.pngypo/90/sea1-512.png") 0 0 no-repeat;
+  background: url("https://cdn.onlinewebfonts.com/svg/img_225415.png") 0 0 no-repeat;
 }
 
 .today__text--rain::before,
@@ -340,9 +354,14 @@ input:focus {
 .today__text--description-04d::before,
 .today__text--description-04n::before,
 .today__text--description-09d:before,
+.today__text--description-09n:before,
 .today__text--description-10d:before,
+.today__text--description-10n:before,
 .today__text--description-11d::before,
+.today__text--description-11n::before,
 .today__text--description-13d::before,
+.today__text--description-13n::before,
+.today__text--description-50d::before,
 .today__text--description-50d::before {
   display: block;
   background-size: contain;
