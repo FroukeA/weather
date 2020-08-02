@@ -384,8 +384,9 @@ input:focus {
 }
 
 .button {
-  =padding: 1.6rem;
-  =border: 0.1rem solid var(--secundairy-color1);
+  padding: 1.6rem;
+
+  border: 0.1rem solid var(--secundairy-color1);
 
   font-size: 1.6rem;
   transition: all 300ms ease;
