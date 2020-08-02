@@ -357,6 +357,10 @@ input:focus {
   margin-right: 1rem;
 }
 
+.today__text--center::before {
+  margin: auto;
+}
+
 .fa-sun {
   color: var(--primary-color5);
 }
