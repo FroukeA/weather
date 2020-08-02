@@ -231,6 +231,10 @@ input:focus {
   outline: none;
 }
 
+.today__title--nowrap {
+  white-space: nowrap;
+}
+
 .today__title--big {
   font-size: 4rem;
   text-transform: capitalize;
