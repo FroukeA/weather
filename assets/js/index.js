@@ -109,6 +109,21 @@ const handleDisplayContent = (array) => {
   });
 };
 
+const handleDisplayWeatherDescription = (element, value, data, v) => {
+  element.className.split(" ").forEach((item) => {
+    if (item.includes("today__text--description-")) {
+      element.classList.remove(item);
+    }
+  });
+
+  data.forEach((item) => {
+    handleAddClass(element, `${value}${item.icon}`);
+  });
+};
+
+const handleAddClass = (element, value) => {
+  element.classList.add(value);
+};
 const handleGetCurrentLocation = (event) => {
   navigator.geolocation.getCurrentPosition(handlePosition);
 };
@@ -177,7 +192,7 @@ const handleDisplayHourlyWeatherLocation = () => {
         </article>
       </dd>`;
 
-    div.classList.add("today__temperatureItem");
+    handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
   });
