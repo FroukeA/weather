@@ -109,6 +109,21 @@ const handleDisplayContent = (array) => {
   });
 };
 
+const handleDisplayWeatherDescription = (element, value) => {
+  element.className.split(" ").forEach((item) => {
+    if (item.includes("today__text--description-")) {
+      element.classList.remove(item);
+    }
+  });
+
+  console.log(currentCity.data.current.weather);
+
+  handleAddClass(
+    element,
+    `${value}${currentCity.data.current.weather[0].icon}`
+  );
+};
+
 const handleAddClass = (element, value) => {
   element.classList.add(value);
 };
@@ -150,16 +165,7 @@ const handleDisplayCurrentWeatherLocation = () => {
 
   const div = document.querySelector("#weather__description");
 
-  div.className.split(" ").forEach((element) => {
-    if (element.includes("today__text--description-")) {
-      div.classList.remove(element);
-    }
-  });
-
-  handleAddClass(
-    div,
-    `today__text--description-${currentCity.data.current.weather[0].main.toLowerCase()}`
-  );
+  handleDisplayWeatherDescription(div, "today__text--description-");
 
   handleDisplayContent(elements);
 };
