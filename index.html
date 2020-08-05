@@ -69,7 +69,7 @@
 
         <article class='article article--grid today'>
           <header class='today__location today__left'>
-            <h3 class='today__title today__title--location today__title--big'>
+            <h3 class='today__title today__title--location today__title--big' id='location'>
               ...
             </h3>
 
@@ -137,7 +137,7 @@
 
                 <dd class='today__text today__text--bigger'>
                   <strong>
-                    <span class='today__text--temperature'>...</span>&#176;
+                    <span class='today__text--temperature' id='temp'>...</span>&#176;
                   </strong>
                 </dd>
               </dl>
@@ -166,7 +166,7 @@
                       lowest temperature
                     </dt>
 
-                    <dd class='today__text today__text--cold'>
+                    <dd class='today__text today__text--cold' id='tempCold'>
                       ...
                       <span>
                         C
@@ -179,7 +179,7 @@
                       highest temperature
                     </dt>
 
-                    <dd class='today__text today__text--hot'>
+                    <dd class='today__text today__text--hot' id='tempHot'>
                       ...
                       <span>
                         C
@@ -210,7 +210,7 @@
                       </span>
                     </dt>
 
-                    <dd class='today__text today__text--rain'>
+                    <dd class='today__text today__text--rain' id='rain'>
                       ...
                     </dd>
                   </div>
@@ -222,7 +222,7 @@
                       </span>
                     </dt>
 
-                    <dd class='today__text today__text--wind'>
+                    <dd class='today__text today__text--wind' id='wind'>
                       ...
                     </dd>
                   </div>
@@ -234,7 +234,31 @@
                       </span>
                     </dt>
 
-                    <dd class='today__text today__text--humidity'>
+                    <dd class='today__text today__text--humidity' id='humidity'>
+                      ...
+                    </dd>
+                  </div>
+
+                  <div class='col col-auto'>
+                    <dt class='today__title today__title--hide'>
+                      <span>
+                        Sunrise
+                      </span>
+                    </dt>
+
+                    <dd class='today__text today__text--sunrise' id='sunrise'>
+                      ...
+                    </dd>
+                  </div>
+
+                  <div class='col col-auto'>
+                    <dt class='today__title today__title--hide'>
+                      <span>
+                        Sunset
+                      </span>
+                    </dt>
+
+                    <dd class='today__text today__text--sunset' id='sunset'>
                       ...
                     </dd>
                   </div>

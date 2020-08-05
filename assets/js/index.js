@@ -76,6 +76,9 @@ let currentPosition = null;
 
 let currentCityName = null;
 
+let sunrise = null;
+let sunset = null;
+
 const currentDate = new Date();
 
 let currentDay = null;
@@ -91,6 +94,10 @@ const days = [
 ];
 
 // common
+const handleCreateDate = (stamp) => {
+  return new Date(stamp * 1000);
+};
+
 const handleCelsiusToFahrenheit = (value) => {
   const temp = (value * 9) / 5 + 32;
   return temp;
@@ -129,40 +136,63 @@ const handleGetCurrentLocation = (event) => {
 };
 
 const handleDisplayCurrentWeatherLocation = () => {
+  sunrise = handleCreateDate(currentCity.data.current.sunrise);
+  sunset = handleCreateDate(currentCity.data.current.sunset);
+
   const elements = [
     {
-      class: ".today__title--location",
+      class: "#location",
       content: currentCity.name,
     },
     {
-      class: ".today__text--temperature",
+      class: "#temp",
       content: currentCity.data.current.temp.toFixed(1),
     },
     {
-      class: ".today__text--rain",
+      class: "#rain",
       content: currentCity.data.current.rain
         ? `${currentCity.data.current.rain}mm/h`
         : `0mm/h`,
     },
     {
-      class: ".today__text--humidity",
+      class: "#humidity",
       content: `${currentCity.data.current.humidity}%`,
     },
     {
-      class: ".today__text--cold",
+      class: "#tempCold",
       content: currentCity.data.daily[0].temp.min.toFixed(1),
     },
     {
-      class: ".today__text--hot",
+      class: "#tempHot",
       content: currentCity.data.daily[0].temp.max.toFixed(1),
     },
     {
-      class: ".today__text--wind",
+      class: "#wind",
       content: `${currentCity.data.current.wind_speed}m/sec`,
     },
     {
-      class: ".today__text--description",
+      class: "#weather__description",
       content: currentCity.data.current.weather[0].description,
+    },
+    {
+      class: "#sunrise",
+      content: `${
+        sunrise.getHours() < 10 ? "0" + sunrise.getHours() : sunrise.getHours()
+      }: ${
+        sunrise.getMinutes() < 10
+          ? "0" + sunrise.getMinutes()
+          : sunrise.getMinutes()
+      }`,
+    },
+    {
+      class: "#sunset",
+      content: `${
+        sunset.getHours() < 10 ? "0" + sunset.getHours() : sunset.getHours()
+      }: ${
+        sunset.getMinutes() < 10
+          ? "0" + sunset.getMinutes()
+          : sunset.getMinutes()
+      }`,
     },
   ];
 
@@ -185,7 +215,7 @@ const handleDisplayHourlyWeatherLocation = () => {
     const div = document.createElement("div");
     const timestamp = item.dt;
 
-    const date = new Date(timestamp * 1000);
+    const date = handleCreateDate(timestamp);
 
     div.innerHTML = `<dt class='today__title today__title--hide'>
         00:30
