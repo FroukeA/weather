@@ -170,6 +170,8 @@ body {
 .today__icon,
 .today__text--rain,
 .today__text--wind,
+.today__text--sunrise,
+.today__text--sunset,
 .today__text--humidity,
 .today__text--description-01d,
 .today__text--description-01n,
@@ -269,22 +271,32 @@ input:focus {
 .today__text--description-09d:before,
 .today__text--description-09n:before {
   content: "";
-  background: url("https://image.flaticon.com/icons/svg/2948/2948175.svg") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959687.svg") 0 0 no-repeat;
+}
+
+.today__text--sunrise::before {
+  content: "";
+  background: url("https://image.flaticon.com/icons/svg/959/959704.svg") 0 0 no-repeat;
+}
+
+.today__text--sunset::before {
+  content: "";
+  background: url("https://image.flaticon.com/icons/svg/959/959707.svg") 0 0 no-repeat;
 }
 
 .today__text--wind::before {
   content: "";
-  background: url("https://i.ya-webdesign.com/images/wind-arrow-png-7.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959711.svg") 0 0 no-repeat;
 }
 
 .today__text--humidity::before {
   content: "";
-  background: url("https://image.flaticon.com/icons/svg/2893/2893015.svg") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959696.svg") 0 0 no-repeat;
 }
 
 .today__text--description-01d::before {
   content: "";
-  background: url("https://static.thenounproject.com/png/39152-200.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959705.svg") 0 0 no-repeat;
 }
 
 .today__text--description-01n::before {
@@ -299,13 +311,13 @@ input:focus {
 
 .today__text--description-02n::before {
   content: "";
-  background: url("https://cdn.onlinewebfonts.com/svg/img_7362.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959692.svg") 0 0 no-repeat;
 }
 
 .today__text--description-03d::before,
 .today__text--description-03n::before {
   content: "";
-  background: url("https://cdn2.iconfinder.com/data/icons/freecns-cumulus/32/519929-27_Cloud-512.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959694.svg") 0 0 no-repeat;
 }
 
 .today__text--description-04d::before,
@@ -333,17 +345,19 @@ input:focus {
 .today__text--description-13d::before,
 .today__text--description-13n::before {
   content: "";
-  background: url("https://cdn.onlinewebfonts.com/svg/img_535543.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959702.svg") 0 0 no-repeat;
 }
 
 .today__text--description-50d::before,
 .today__text--description-50n::before {
   content: "";
-  background: url("https://cdn.onlinewebfonts.com/svg/img_225415.png") 0 0 no-repeat;
+  background: url("https://image.flaticon.com/icons/svg/959/959703.svg") 0 0 no-repeat;
 }
 
 .today__text--rain::before,
 .today__text--wind::before,
+.today__text--sunrise::before,
+.today__text--sunset::before,
 .today__text--humidity::before,
 .today__text--description-01d::before,
 .today__text--description-01n::before,
