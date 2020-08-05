@@ -324,7 +324,7 @@ const handleChangeDate = () => {
 
   const elements = [
     {
-      class: ".today__text--dayName",
+      class: "#dayName",
       content: days[currentDay],
     },
   ];
