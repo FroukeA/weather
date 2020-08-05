@@ -139,8 +139,14 @@ const handleDisplayCurrentWeatherLocation = () => {
       content: currentCity.data.current.temp.toFixed(1),
     },
     {
+      class: ".today__text--rain",
+      content: currentCity.data.current.rain
+        ? `${currentCity.data.current.rain}mm/h`
+        : `0mm/h`,
+    },
+    {
       class: ".today__text--humidity",
-      content: currentCity.data.current.humidity,
+      content: `${currentCity.data.current.humidity}%`,
     },
     {
       class: ".today__text--cold",
@@ -152,7 +158,7 @@ const handleDisplayCurrentWeatherLocation = () => {
     },
     {
       class: ".today__text--wind",
-      content: currentCity.data.current.wind_speed,
+      content: `${currentCity.data.current.wind_speed}m/sec`,
     },
     {
       class: ".today__text--description",
@@ -176,7 +182,6 @@ const handleDisplayHourlyWeatherLocation = () => {
   list.innerHTML = "";
 
   currentCity.data.hourly.map((item, i) => {
-    console.log(item);
     const div = document.createElement("div");
     const timestamp = item.dt;
 
