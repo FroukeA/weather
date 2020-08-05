@@ -203,7 +203,7 @@ const handleDisplayHourlyWeatherLocation = () => {
           <p class='today__text today__text--description today__text--center' id='weather__description--${i}-hourly'></p>
 
           <p class='today__text today__text--center'>
-            ${date.getHours()}:${
+            ${date.getHours() < 10 ? "0" + date.getHours() : date.getHours()}:${
       date.getMinutes() < 10 ? "0" + date.getMinutes() : date.getMinutes()
     }
           </p>
