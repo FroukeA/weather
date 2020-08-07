@@ -185,6 +185,14 @@ const handleDisplayCurrentWeatherLocation = () => {
 
   const div = document.querySelector("#weather__description");
 
+  for (const [key, value] of Object.entries(
+    JSON.parse(localStorage.getItem("favorites"))
+  )) {
+    if (value.name === currentCity.name) {
+      document.querySelector("#favorite").checked = "checked";
+    }
+  }
+
   handleDisplayWeatherDescription(
     div,
     "today__text--description-",
@@ -467,7 +475,7 @@ const handleDisplayFavorites = () => {
   const list = document.querySelector("#favoritesList");
 
   list.innerHTML = "";
-  
+
   for (const [key, value] of Object.entries(
     JSON.parse(localStorage.getItem("favorites"))
   )) {
