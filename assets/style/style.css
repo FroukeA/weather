@@ -487,6 +487,7 @@ input:focus {
   .today {
     display: grid;
     width: 100vw;
+    background: red;
 
     grid-template-columns: 1fr;
 
