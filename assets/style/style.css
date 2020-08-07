@@ -491,6 +491,18 @@ input:focus {
 
 /* *** MEDIAQUERY *** */
 @media only screen and (max-width: 992px) {
+  .today {
+    grid-gap: 0px;
+  }
+
+  .today__right {
+    padding: 0;
+  }
+
+  .today__temperatureList {
+    width: 100%;
+  }
+
   .today__text--bigger {
     font-size: 14vw;
   }
@@ -498,18 +510,17 @@ input:focus {
 
 @media only screen and (max-width: 575px) {
   .today__text--bigger {
-    font-size: 31vw;
+    font-size: 27vw;
   }
 }
 
 @media only screen and (max-width: 992px) {
   .today {
-    width: 100vw;
-    display: grid;
-
     grid-template-columns: 1fr;
 
     grid-template-areas: "search""location""day""temp""feature""list";
+
+    padding: 2rem;
   }
 }
 
