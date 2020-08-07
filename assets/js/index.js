@@ -195,6 +195,14 @@ console.log(JSON.parse(localStorage.getItem("favorites")));
     }
   }
 
+  for (const [key, value] of Object.entries(
+    JSON.parse(localStorage.getItem("favorites"))
+  )) {
+    if (value.name === currentCity.name) {
+      document.querySelector("#favorite").checked = "checked";
+    }
+  }
+
   handleDisplayWeatherDescription(
     div,
     "today__text--description-",
