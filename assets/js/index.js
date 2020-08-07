@@ -203,7 +203,7 @@ const handleDisplayHourlyWeatherLocation = () => {
           </p>
         </article>
       </dd>`;
-    
+
     handleAddClass(div, "today__temperatureItem");
 
     list.appendChild(div);
@@ -364,8 +364,6 @@ const handleCheckFahrenheit = (event) => {
 const handleClickFavoriteItem = (event) => {
   handleUnCheckFavorites(event.target.id);
 
-  // currentCity = favorites[event.target.id];
-
   document.querySelector("#favorite").checked = "checked";
 
   const apiUrl1 = `https://api.openweathermap.org/data/2.5/weather?q=${event.target.id.toLowerCase()}&appid=${apiKey}&units=metric`;
@@ -429,7 +427,9 @@ const handleDisplayFavorites = () => {
 
   list.innerHTML = "";
 
-  for (const [key, value] of Object.entries(favorites)) {
+  for (const [key, value] of Object.entries(
+    JSON.parse(localStorage.getItem("favorites"))
+  )) {
     const li = document.createElement("li");
 
     li.innerHTML = `
