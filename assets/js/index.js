@@ -1,18 +1,5 @@
 // Data
-let favorites = {
-  spring: {
-    name: "Spring",
-    data: {},
-  },
-  almaty: {
-    name: "Almaty",
-    data: {},
-  },
-  izegem: {
-    name: "Izegem",
-    data: {},
-  },
-};
+let favorites = {};
 
 let sentence = "";
 
@@ -457,13 +444,23 @@ const handleClickFavorite = (event) => {
 };
 
 const handleAddFavorite = (event) => {
+  // get item
+  favorites = JSON.parse(localStorage.getItem("favorites"));
+  // add current city
   favorites[currentCity.name.toLowerCase()] = currentCity;
+  // save to localStorage
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 
   handleDisplayFavorites();
 };
 
 const handleDeleteFavorite = () => {
-  delete favorites[currentCity.name.toLocaleLowerCase()];
+  // get item
+  favorites = JSON.parse(localStorage.getItem("favorites"));
+  // remove current city
+  delete favorites[currentCity.name.toLowerCase()];
+  // save to localStorage
+  localStorage.setItem("favorites", JSON.stringify(favorites));
 
   handleDisplayFavorites();
 };
@@ -472,8 +469,10 @@ const handleDisplayFavorites = () => {
   const list = document.querySelector("#favoritesList");
 
   list.innerHTML = "";
-
-  for (const [key, value] of Object.entries(favorites)) {
+  console.log(JSON.parse(localStorage.getItem("favorites")));
+  for (const [key, value] of Object.entries(
+    JSON.parse(localStorage.getItem("favorites"))
+  )) {
     const li = document.createElement("li");
 
     li.innerHTML = `
@@ -539,6 +538,13 @@ function handleCurrentForcast(response) {
 }
 
 const init = () => {
+  if (
+    JSON.parse(localStorage.getItem("favorites")) === undefined ||
+    JSON.parse(localStorage.getItem("favorites")) === null
+  ) {
+    localStorage.setItem("favorites", JSON.stringify(favorites));
+  }
+
   handleGetCurrentLocation();
 
   document
