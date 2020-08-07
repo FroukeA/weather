@@ -521,8 +521,6 @@ input:focus {
   .today {
     display: grid;
 
-    width: 100vw;
-
     grid-template-columns: 1fr;
 
     grid-template-areas: "search""location""day""temp""feature""list";
