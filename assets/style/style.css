@@ -124,10 +124,12 @@ body {
 }
 
 .today__left {
+  width: 100%;
   padding-right: 3rem;
 }
 
 .today__right {
+  width: 100%;
   padding-left: 3rem;
 }
 
@@ -519,8 +521,8 @@ input:focus {
 @media only screen and (max-width: 992px) {
   .today {
     display: grid;
+
     width: 100vw;
-    background: red;
 
     grid-template-columns: 1fr;
 
