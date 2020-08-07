@@ -166,7 +166,7 @@ body {
   scrollbar-width: none;
   /* Firefox */
 
-  margin: 4rem 0;
+  padding: 4rem 0;
 }
 
 .today__location,
@@ -502,10 +502,6 @@ input:focus {
   .today__right {
     padding: 0;
   }
-
-  /* .today__temperatureList {
-    width: 100%;
-  } */
 
   .today__text--bigger {
     font-size: 14vw;
