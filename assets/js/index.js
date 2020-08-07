@@ -395,8 +395,6 @@ const handleCheckFahrenheit = (event) => {
 const handleClickFavoriteItem = (event) => {
   handleUnCheckFavorites(event.target.id);
 
-  // currentCity = favorites[event.target.id];
-
   document.querySelector("#favorite").checked = "checked";
 
   const apiUrl1 = `https://api.openweathermap.org/data/2.5/weather?q=${event.target.id.toLowerCase()}&appid=${apiKey}&units=metric`;
@@ -469,7 +467,7 @@ const handleDisplayFavorites = () => {
   const list = document.querySelector("#favoritesList");
 
   list.innerHTML = "";
-  console.log(JSON.parse(localStorage.getItem("favorites")));
+  
   for (const [key, value] of Object.entries(
     JSON.parse(localStorage.getItem("favorites"))
   )) {
