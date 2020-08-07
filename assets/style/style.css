@@ -116,6 +116,8 @@ body {
 .today {
   display: grid;
 
+  width: 100%;
+
   grid-template-columns: 1fr 1fr;
 
   grid-template-areas: "location search""day day""temp feature""list list";
