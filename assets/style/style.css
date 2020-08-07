@@ -485,6 +485,8 @@ input:focus {
 
 @media only screen and (max-width: 992px) {
   .today {
+    width: 100vw;
+
     grid-template-columns: 1fr;
 
     grid-template-areas: "search""location""day""temp""feature""list";
