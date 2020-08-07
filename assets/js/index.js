@@ -188,9 +188,7 @@ console.log(JSON.parse(localStorage.getItem("favorites")));
   for (const [key, value] of Object.entries(
     JSON.parse(localStorage.getItem("favorites"))
   )) {
-    console.log(value);
     if (value.name === currentCity.name) {
-      console.log("same");
       document.querySelector("#favorite").checked = "checked";
     }
   }
