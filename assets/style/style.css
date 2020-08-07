@@ -503,9 +503,9 @@ input:focus {
     padding: 0;
   }
 
-  .today__temperatureList {
+  /* .today__temperatureList {
     width: 100%;
-  }
+  } */
 
   .today__text--bigger {
     font-size: 14vw;
