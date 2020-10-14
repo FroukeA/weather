@@ -373,10 +373,10 @@ input:focus {
 .today__text--description-03n::before,
 .today__text--description-04d::before,
 .today__text--description-04n::before,
-.today__text--description-09d:before,
-.today__text--description-09n:before,
-.today__text--description-10d:before,
-.today__text--description-10n:before,
+.today__text--description-09d::before,
+.today__text--description-09n::before,
+.today__text--description-10d::before,
+.today__text--description-10n::before,
 .today__text--description-11d::before,
 .today__text--description-11n::before,
 .today__text--description-13d::before,
@@ -519,7 +519,7 @@ input:focus {
 @media only screen and (max-width: 992px) {
   .today {
     display: grid;
-    
+
     grid-template-columns: 1fr;
 
     grid-template-areas: "search""location""day""temp""feature""list";
